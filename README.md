@@ -35,6 +35,9 @@ WANRING! This binary mount will work fine is the binary is build statically.
 
 # How to build and publish this image?
 
+__Requirement:__
+- You need to have a docker able to run in your user context. sudo or docker socket open.
+
 1. Then build it and tag it with <host>[:port]/<repo>/jenkins-slave-dood
 
     $ bin/build.sh MyRepo

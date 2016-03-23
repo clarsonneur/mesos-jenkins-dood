@@ -22,6 +22,6 @@ else
    DOCKER_VERSION="$2"
 fi
 
-sudo docker build -t $1/jenkins-slave-dood:$DOCKER_VERSION --build-arg DOCKER_VERSION=$DOCKER_VERSION $PROXY .
-sudo docker push $1/jenkins-slave-dood:$DOCKER_VERSION
+docker build -t $1/jenkins-slave-dood:$DOCKER_VERSION --build-arg DOCKER_VERSION=$DOCKER_VERSION $PROXY .
+docker push $1/jenkins-slave-dood:$DOCKER_VERSION
 
